@@ -42,5 +42,8 @@ jobs:
         with:
           node-version: 18
 
+      - name: "Install eslint"
+        run: npm install -D eslint
+
       - name: "Lint code"
         run: npm run lint --if-present
